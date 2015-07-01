@@ -13,6 +13,10 @@
 		3B8E58AC1B437712003087BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8E58AB1B437712003087BA /* Images.xcassets */; };
 		3B8E58AF1B437712003087BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B8E58AD1B437712003087BA /* LaunchScreen.xib */; };
 		3B8E58BB1B437712003087BA /* SwipeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E58BA1B437712003087BA /* SwipeDemoTests.swift */; };
+		3B8E58C71B437A7D003087BA /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E58C61B437A7D003087BA /* HMSegmentedControl.m */; };
+		3B8E58CD1B4382ED003087BA /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E58CC1B4382ED003087BA /* ChildViewController.swift */; };
+		3BE129B71B438AAB001DFCD5 /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE129B61B438AAB001DFCD5 /* CustomSegue.swift */; };
+		3BE129B91B43A025001DFCD5 /* discover.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BE129B81B43A025001DFCD5 /* discover.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,12 @@
 		3B8E58B41B437712003087BA /* SwipeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8E58B91B437712003087BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B8E58BA1B437712003087BA /* SwipeDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeDemoTests.swift; sourceTree = "<group>"; };
+		3B8E58C51B437A7D003087BA /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		3B8E58C61B437A7D003087BA /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		3B8E58C91B437AAE003087BA /* Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridge-Header.h"; path = "SwipeDemo/Bridge-Header.h"; sourceTree = SOURCE_ROOT; };
+		3B8E58CC1B4382ED003087BA /* ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		3BE129B61B438AAB001DFCD5 /* CustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
+		3BE129B81B43A025001DFCD5 /* discover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discover.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +87,17 @@
 		3B8E58A11B437712003087BA /* SwipeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3BE129B81B43A025001DFCD5 /* discover.png */,
+				3B8E58C91B437AAE003087BA /* Bridge-Header.h */,
+				3B8E58C41B437A7D003087BA /* HMSegmentedControl */,
 				3B8E58A41B437712003087BA /* AppDelegate.swift */,
 				3B8E58A61B437712003087BA /* ViewController.swift */,
 				3B8E58A81B437712003087BA /* Main.storyboard */,
 				3B8E58AB1B437712003087BA /* Images.xcassets */,
 				3B8E58AD1B437712003087BA /* LaunchScreen.xib */,
 				3B8E58A21B437712003087BA /* Supporting Files */,
+				3B8E58CC1B4382ED003087BA /* ChildViewController.swift */,
+				3BE129B61B438AAB001DFCD5 /* CustomSegue.swift */,
 			);
 			path = SwipeDemo;
 			sourceTree = "<group>";
@@ -110,6 +125,15 @@
 				3B8E58B91B437712003087BA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B8E58C41B437A7D003087BA /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E58C51B437A7D003087BA /* HMSegmentedControl.h */,
+				3B8E58C61B437A7D003087BA /* HMSegmentedControl.m */,
+			);
+			path = HMSegmentedControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +218,7 @@
 			files = (
 				3B8E58AA1B437712003087BA /* Main.storyboard in Resources */,
 				3B8E58AF1B437712003087BA /* LaunchScreen.xib in Resources */,
+				3BE129B91B43A025001DFCD5 /* discover.png in Resources */,
 				3B8E58AC1B437712003087BA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8E58C71B437A7D003087BA /* HMSegmentedControl.m in Sources */,
 				3B8E58A71B437712003087BA /* ViewController.swift in Sources */,
 				3B8E58A51B437712003087BA /* AppDelegate.swift in Sources */,
+				3BE129B71B438AAB001DFCD5 /* CustomSegue.swift in Sources */,
+				3B8E58CD1B4382ED003087BA /* ChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +371,7 @@
 				INFOPLIST_FILE = SwipeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwipeDemo/Bridge-Header.h";
 			};
 			name = Debug;
 		};
@@ -353,6 +382,7 @@
 				INFOPLIST_FILE = SwipeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwipeDemo/Bridge-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +439,7 @@
 				3B8E58C01B437712003087BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B8E58C11B437712003087BA /* Build configuration list for PBXNativeTarget "SwipeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +448,7 @@
 				3B8E58C31B437712003087BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
