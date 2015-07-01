@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--MPrep-->
+        <!--Vale-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SwipeDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,7 +41,7 @@
                             <constraint firstItem="0la-bj-WHh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="oo9-dc-C9s"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="MPrep" id="P15-Nd-yyY"/>
+                    <navigationItem key="navigationItem" title="Vale" id="P15-Nd-yyY"/>
                     <connections>
                         <outlet property="segmentedControl" destination="0la-bj-WHh" id="nkY-Mj-ppb"/>
                     </connections>
@@ -166,7 +166,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="discover.png" width="1080" height="1572"/>
+        <image name="discover.png" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lQz-AN-bNc"/>
